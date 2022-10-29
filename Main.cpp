@@ -53,11 +53,12 @@ double computeAverage(const int a[], int numberUsed)
 		return 0;
 	}
 
-	void showDifference(const int a[], int numberUsed)
+}
+
+void showDifference(const int a[], int numberUsed)
 {
-		double average = computeAverage(a, numberUsed);
-		cout << "Average of the " << numberUsed << " scores = " << average << endl << "The scores are:\n";
-		for (int index = 0; index < numberUsed; index++)
-			cout << a[index] << " differs from the average by " << (a[index] - average) << endl;
-	}
+	double average = computeAverage(a, numberUsed);
+	cout << "Average of the " << numberUsed << " scores = " << average << endl << "The scores are:\n";
+	for (int index = 0; index < numberUsed; index++)
+		cout << a[index] << " differs from the average by " << (a[index] - average) << endl;
 }
